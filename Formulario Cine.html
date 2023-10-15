@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Opinión sobre la película Venom (2018)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <h2>Opinión sobre la película Venom</h2>
+    <form action="msanllehi.github.io" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="valoracion">Valoración:</label>
+        <select id="valoracion" name="valoracion" required>
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+
+        <label for="opinion">Opinión Personal:</label>
+        <textarea id="opinion" name="opinion" rows="4" required></textarea>
+
+        <label for="cine">Cine donde se vio:</label>
+        <select id="cine" name="cine">
+            <option value="cines-verdi">Cines Verdi</option>
+            <option value="filmoteca-catalunya">Filmoteca de Catalunya</option>
+            <option value="balmes-multicines">Balmes Multicines</option>
+            <option value="cinema-malda">Cinema Maldà</option>
+            <option value="icaria-yelmo-cineplex">Icaria Yelmo Cineplex</option>
+            <option value="phenomena">Phenomena</option>
+            <option value="aribau-multicines">Aribau Multicines</option>
+            <option value="gran-sarria">Gran Sarria</option>
+        </select>
+
+        <label for="ambiente">Ambiente en el cine:</label>
+        <textarea id="ambiente" name="ambiente" rows="4"></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
